@@ -1,0 +1,189 @@
+/*
+THEME NAME: Thematic
+THEME URI: http://themeshaper.com/
+DESCRIPTION: A development theme based on work in <a href="http://code.google.com/p/blueprintcss/"> The Blueprint CSS Framework</a>, and by <a href="http://www.pearsonified.com/">Chris Pearson</a>, <a href="http://andy.wordpress.com/">Andy Skelton</a>, <a href="http://www.plaintxt.org/">Scott Allan Wallick</a> and many, many others.
+VERSION: 0.3
+AUTHOR: Ian Stewart
+AUTHOR URI: http://themeshaper.com/
+*/
+
+/* Reset browser defaults */
+@import url('library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('library/styles/typography.css');
+
+/* Style the meta panel for logged-in users */
+@import url('library/styles/sitemeta.css');
+
+/* Apply a basic layout */
+@import url('library/layouts/3c-r-fixed.css');
+
+/* Prepare theme for plugins */
+@import url('library/styles/plugins.css');
+
+/* Set a grid with 18px line-height to fit 125px ad units  */
+body { background:url(images/125x18grid.jpg) repeat-y top center; }
+
+
+/* =Global Elements
+-------------------------------------------------------------- */
+
+a:link, a:visited {
+    color:blue;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#header {
+    padding:3em 0;
+}
+
+/* =Menu
+-------------------------------------------------------------- */
+
+.skip-link {
+    display:none;
+}
+#menu ul {
+    margin:0;
+    list-style:none;
+    clear:both;
+}
+#menu ul ul {
+    display:none;
+}
+#menu li {
+    display:inline;
+}
+#menu a {
+    display:block;
+    float:left;
+}
+.current_page_item a {
+    font-weight:bold;
+}
+
+/* =Content
+-------------------------------------------------------------- */
+
+#container .aside {
+    margin:0 0 36px 0;
+}
+.hentry {
+    padding:0 0 36px 0;
+}
+.entry-content {
+    overflow:hidden;
+}
+.content-column, .entry-content .linkcat {
+	list-style:none;
+	float:left;
+}
+.page-link {
+    margin:0 0 18px 0;
+}
+.page .edit-link {
+    float:left;
+    clear:both;
+}
+
+/* =Comments
+-------------------------------------------------------------- */
+
+#comments {
+}
+
+/* =Author Info
+-------------------------------------------------------------- */
+
+#author-info {
+    margin:18px 0 36px 0;
+}
+#author-info .avatar {
+    float:left;
+    margin:0 10px 10px 0;
+}
+
+/* =Forms
+-------------------------------------------------------------- */
+
+#respond input {
+    width:100%;
+}
+#respond textarea {
+    width:100%;
+}
+
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.navigation {
+    overflow:hidden;
+    margin:0 0 36px 0;
+}
+.nav-previous {
+	float: left;
+	width:50%;
+}
+.nav-next {
+	float: right;
+	width:50%;
+	text-align:right;
+}
+#nav-above,#nav-below {
+	width: 100%;
+}
+.paged #nav-above {
+    display:block;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+/*  Remember the baseline   */
+
+.entry-content img { margin: 0 0 18px 0; max-width:100%; }
+
+img.alignleft,img.align-left {
+	float: left;
+	margin-right:20px;
+}
+img.alignright,img.align-right {
+	display: block;
+	float: right;
+	margin-left:20px;
+}
+img.center {
+	margin: 0 auto;
+	display: block;
+	float: none;
+	clear: both;
+}
+.wp-smiley { /* Prevent the smileys from breaking line-height */
+	max-height:12px;
+}
+
+/* =asides (widgetized areas)
+-------------------------------------------------------------- */
+
+.aside ul {
+    margin:0;
+    list-style:none;
+}
+.aside {
+    background:#cccccc;
+}
+#primary {
+    background:#aaaaaa;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#subsidiary .aside {
+    margin-bottom:18px;
+}
