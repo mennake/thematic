@@ -7,6 +7,7 @@ function childtheme_head_scripts() {
 add_filter('thematic_head_scripts','childtheme_head_scripts');
 
 // Adds a home link to your menu
+// http://codex.wordpress.org/Template_Tags/wp_page_menu
 function childtheme_menu_args($args) {
     $args = array(
         'show_home' => 'Home',
