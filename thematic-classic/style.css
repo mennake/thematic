@@ -1,0 +1,33 @@
+/*   
+Theme Name: Thematic Classic
+Theme URI: 
+Description: A Thematic Child Theme that replicates the original look of Thematic.
+Author: Ian Stewart
+Author URI: http://themeshaper.com/
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic Classic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+@import url('../thematic/library/styles/classic.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+
